@@ -1,8 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": ["prettier", "airbnb-base", "next/core-web-vitals"],
   "plugins": ["simple-import-sort"],
   "rules": {
-    "simple-import-sort/exports": "warn"
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "arrow-body-style": "off",
+    "simple-import-sort/exports": "warn",
+    "no-multiple-empty-lines": "warn",
+    "no-trailing-spaces": "warn",
+    "padded-blocks": "warn"
   },
   "overrides": [
     // override "simple-import-sort" config
